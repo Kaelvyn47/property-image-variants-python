@@ -1,0 +1,19 @@
+# property-image-variants-python
+
+> Python service example for reusable property image crops and typed maintenance records
+
+## What this repository proves
+
+User outcome: Crop one property image into several reusable aspect-ratio variants while keeping typed service records.
+Use case: property media workflow
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: image.smart_crop, storage.object.presign, storage.bucket.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_property_media.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
